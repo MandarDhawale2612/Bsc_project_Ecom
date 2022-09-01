@@ -1,0 +1,648 @@
+html {
+    scroll-behavior: smooth;
+
+}
+.navitemm{
+    position: relative;
+    top: 25px;
+}
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 5px 50px;
+    height: 115px;
+    /* position: sticky; */
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    color: white;
+
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.searchInput::placeholder {
+    color: lightgray;
+
+}
+
+.offer {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    font-size: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 800;
+}
+
+.menuItem:hover {
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+}
+
+.slider {
+    background-color: whitesmoke;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    z-index: 1;
+}
+
+.sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    border: 1px solid grey;
+    z-index: 1;
+}
+
+.byeButton {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.byeButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.sliderImg {
+    z-index: 2;
+}
+
+.sliderBg {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+
+}
+
+/* slider Baground */
+.sliderItem:nth-child(1) .sliderBg {
+    background-color: red;
+}
+
+.sliderItem:nth-child(2) .sliderBg {
+    background-color: green;
+}
+
+.sliderItem:nth-child(3) .sliderBg {
+    background-color: purple;
+}
+
+.sliderItem:nth-child(4) .sliderBg {
+    background-color: orange;
+}
+
+.sliderItem:nth-child(5) .sliderBg {
+    background-color: teal;
+}
+
+/* price */
+
+.sliderItem:nth-child(1) .sliderPrice {
+    color: red;
+}
+
+.sliderItem:nth-child(2) .sliderPrice {
+    color: green;
+}
+
+.sliderItem:nth-child(3) .sliderPrice {
+    color: purple;
+}
+
+.sliderItem:nth-child(4) .sliderPrice {
+    color: orange;
+}
+
+.sliderItem:nth-child(5) .sliderPrice {
+    color: teal;
+}
+
+/* feature */
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.featureimg {
+    width: 50px;
+    height: 50px;
+
+}
+
+.featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDes {
+    color: gray;
+    width: 50%;
+    height: 100px;
+
+
+}
+
+/* product  */
+.product {
+    clip-path: polygon(0 15%, 100% 0, 100% 98%, 0 86%);
+    height: 110vh;
+    background-color: whitesmoke;
+    /* display: flex; */
+    position: relative;
+}
+
+.productimg {
+    margin: 100px;
+}
+
+.productDetail {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle {
+    font-size: 75px;
+    font-weight: 900;
+
+}
+
+.productprice {
+    font-size: 30px;
+}
+
+.productDes {
+    font-size: 20px;
+    color: gray;
+    margin: 10px 0;
+}
+
+
+.color {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    background-color: #ceff5d;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.color:last-child {
+    background-color: red;
+}
+
+
+.colors,
+.sizes {
+    margin-bottom: 20px;
+    display: flex;
+
+
+}
+
+.size {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.productButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.productButton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* payment form */
+.payment {
+    display: none;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 2111px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    flex-direction: column;
+    -webkit-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+}
+
+.payTitle {
+    font-size: 20px;
+    color: lightgray;
+}
+
+.paylable{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder {
+    color: lightgray;
+}
+
+.cardIcons {
+    display: flex;
+}
+
+.cardIcon {
+    margin-right: 10px;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm {
+    width: 25%;
+}
+
+.payButton {
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    background-color: green;
+    color: white;
+    -webkit-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: green;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    padding: 2px;
+}
+
+
+/* sign in form */
+.SignIn{
+    display:none;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 2111px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    flex-direction: column;
+    -webkit-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+}
+.signInTitle{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 0px;
+
+}
+.signInput{
+    margin: 5px 0px;
+    padding: 10px;
+    
+    border: none;
+    border-bottom: 1px solid gray;
+
+}
+.email{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+.continueButton{
+    
+    height: 40px;
+    bottom: 40px;
+    width: 100%;
+   background-color: green;
+    color: white;
+    -webkit-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.note{
+    color: gray;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+.signinlable{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+.ButtonReg{
+    background-color: whitesmoke;
+    color: black;
+    height: 35px;
+    bottom: 40px;
+    width: 100%;
+    cursor: pointer;
+
+}
+.closeSignPg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: green;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    padding: 2px;
+
+}
+
+/* Registration form */
+
+.Registration{
+    display:none;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 2111px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    flex-direction: column;
+    -webkit-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+}
+
+.RegTitle{
+    font-size: 25px;
+    color: black; 
+}
+.Reglable{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.RegInput{
+    margin: 5px 0px;
+    padding: 10px;
+    
+    border: none;
+    border-bottom: 1px solid gray;
+
+}
+.RegDoneButton{
+    height: 30px;
+    bottom: 30px;
+    width: 100%;
+   background-color: green;
+    color: white;
+    -webkit-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 10px 29px 5px rgba(0, 0, 0, 0.65);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.Already{
+    margin:15px 0px ;
+    font-size: 14px;
+}
+
+
+
+.viratcontainer{
+height: 600px;
+width: 100%;
+background-color: black;
+margin-bottom: 20px;
+}
+.virattitle{
+position: relative;
+font-size: 50px;
+font-weight: 900;
+color: white;
+top: 150px;
+float:right;
+padding-right: 200px;
+text-align: center;
+}
+.Button3{
+    background-color:black;
+    color: white;
+    font-size: 50%;
+   padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+
+    
+}
+.Button3:hover{
+    background-color:white;
+    color: black;
+
+}
+footer{
+display: flex;
+}
+.footerLeft{
+flex: 2;
+display: flex;
+justify-content: space-between;
+padding: 50px;
+
+}
+
+
+.fmtitle{
+font-size: 16px;
+
+}
+.fmlist{
+    padding: 0;
+    list-style: none;
+}
+.fListItem{
+margin-bottom: 10px;
+color: gray;
+list-style: none;
+cursor: pointer;
+}
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.finput{
+    padding: 5px;
+
+}
+.fButton{
+
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.copyright{
+font-weight: 300;
+font-size: 14px;
+
+}
+
